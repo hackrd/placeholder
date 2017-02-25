@@ -1,0 +1,175 @@
+/* Rubik font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+
+body {
+  color: #FFF;
+  background-color: #1E1E1E;
+  height: 100%;
+  width: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  opacity: 50%;
+}
+
+.byline {
+  margin-top: 5%;
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36pt;
+}
+
+.link {
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 21pt;
+  color: #fff !important;
+}
+
+.mobile-link {
+  visibility: hidden;
+}
+
+.mobile-byline {
+  visibility: hidden;
+}
+
+.logo {
+  margin-top: 10%;
+  margin-left: 5%;
+  max-width: 30%;
+}
+
+/* Border related */
+
+  #top, #bottom, #left, #right {
+  	background: #FFFA03;
+  	position: fixed;
+    z-index: 9999;
+  }
+
+  #left, #right {
+  	top: 0;
+    bottom: 0;
+  	width: 15px;
+  }
+  #left {
+    left: 0;
+  }
+
+  #right {
+    right: 0;
+  }
+
+  #top, #bottom {
+  	left: 0;
+    right: 0;
+  	height: 15px;
+  }
+
+  #top {
+    top: 0;
+  }
+
+  #bottom {
+    bottom: 0;
+  }
+
+  #logo {
+    margin: auto;
+  }
+
+
+/* Mobile Scaling */
+
+  /* iPhone 7 and phones of similar size */
+
+  /* Portrait and Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+  /* Portrait */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .logo {
+      margin-top: 50%;
+      margin-left: 5%;
+      max-width: 75%;
+    }
+
+    .byline {
+      visibility: hidden;
+    }
+
+    .mobile-byline {
+      margin-top: -10%;
+      margin-left: 5%;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20pt;
+      visibility: visible;
+    }
+
+    .mobile-link {
+      visibility: visible;
+      font-size: 18pt;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      text-align: center;
+      background-color: #FFFA03;
+      color: #1E1E1E;
+      bottom: 0 !important;
+      min-width: 100%;
+      position: absolute;
+    }
+
+    .link {
+      display: none;
+    }
+
+    #top, #bottom, #left, #right { display: none; }
+
+  }
+
+  /* Landscape */
+  @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .logo {
+      margin-top: 10%;
+      margin-left: 5%;
+      max-width: 35%;
+    }
+    .byline {
+      margin-top: 5%;
+      margin-left: 5%;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 20pt;
+    }
+
+    .link {
+      margin-top: 5%;
+      margin-left: 5%;
+      font-size: 12pt;
+      color: #fff !important;
+    }
+
+  }
