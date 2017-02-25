@@ -24,13 +24,13 @@ a:hover {
   margin-left: 5%;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 36pt;
+  font-size: 3vw;
 }
 
 .link {
   margin-top: 5%;
   margin-left: 5%;
-  font-size: 21pt;
+  font-size: 1.5vw;
   color: #fff !important;
 }
 
