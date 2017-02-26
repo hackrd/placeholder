@@ -65,13 +65,14 @@ a:hover {
 }
 
 #footer {
-  position:fixed;
-   left:0px;
+  position: fixed;
+   left: 5%;
    bottom:10px;
    height:30px;
    width:100%;
    color: rgba(255, 255, 255, 0.38);
-  z-index: 99999999999;
+   background-color: #1E1E1E;
+  z-index: 999;
 }
 
 /* Border related */
@@ -169,6 +170,14 @@ a:hover {
       display: none;
     }
 
+    #footer {
+      left: 5%;
+      bottom: 35px;
+      height:30px;
+      width:100%;
+    }
+
+
     #top, #bottom, #left, #right { display: none; }
 
   }
@@ -197,6 +206,22 @@ a:hover {
       margin-left: 5%;
       font-size: 12pt;
       color: #fff !important;
+    }
+
+    #footer {
+      left: 5%;
+      font-size: 10px;
+      background-color: transparent;
+      padding-top: 5% !important;
+      width:100%;
+    }
+
+    #top, #bottom {
+      height: 10px;
+    }
+
+    #left, #right {
+      width: 10px;
     }
 
   }
