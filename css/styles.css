@@ -71,8 +71,8 @@ a:hover {
    height:30px;
    width:100%;
    color: rgba(255, 255, 255, 0.38);
-   background-color: #1E1E1E;
-  z-index: 999;
+   z-index: 999;
+   text-align: right;
 }
 
 /* Border related */
@@ -176,6 +176,7 @@ a:hover {
       bottom: 35px;
       height:30px;
       width:100%;
+      text-align: left;
     }
 
 
@@ -215,6 +216,7 @@ a:hover {
       background-color: transparent;
       padding-top: 5% !important;
       width:100%;
+      text-align: right;
     }
 
     #top, #bottom {
