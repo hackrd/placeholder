@@ -142,6 +142,10 @@ a:hover {
       font-size: 12pt;
     }
 
+    #social-icons {
+      top: 85%;
+    }
+
   }
 
   /* Landscape */
@@ -160,10 +164,7 @@ a:hover {
     }
 
     #social-icons {
-      position: fixed;
       top: 85%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
 
     #footer {
