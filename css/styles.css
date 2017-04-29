@@ -1,12 +1,25 @@
+/* This code is the property of the River Dell Regional School District and its related entities. It may not be copied or re-used without express permission from the Development Team */
 /* Rubik font from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500');
 
 body {
   color: #FFF;
-  background-color: #1E1E1E;
+  background: linear-gradient(to bottom right, #057AFF, #42449D); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #057AFF;
+  color: #fff;
+}
+::-moz-selection {
+  background: #057AFF;
+  color: #fff;
 }
 
 a {
@@ -19,13 +32,22 @@ a:hover {
   opacity: 50%;
 }
 
-.byline {
-  margin-top: 5%;
-  margin-left: 5%;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 3vw;
+.logo-overlay h1 {
+  font-size: 90pt;
+  font-weight: 500;
+  width: 100%;
 }
+
+.logo-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  text-align: center;
+}
+
 
 .link {
   margin-top: 5%;
@@ -43,14 +65,21 @@ a:hover {
 }
 
 .logo {
-  margin-top: 10%;
-  margin-left: 5%;
-  max-width: 30%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55%;
+  text-align: center;
 }
 
 #social-icons {
- margin-left: 5%;
- opacity: .5;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  min-width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .icon {
@@ -66,53 +95,15 @@ a:hover {
 
 #footer {
   position: fixed;
-   right: 3%;
-   bottom:10px;
-   height:30px;
-   width:100%;
-   color: rgba(255, 255, 255, 0.38);
-   z-index: 999;
-   text-align: right;
+  bottom:10px;
+  height:30px;
+  width:100%;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.25);
+  z-index: 999;
+  text-align: center;
+  font-size: 13pt;
 }
-
-/* Border related */
-
-  #top, #bottom, #left, #right {
-  	background: #FFFA03;
-  	position: fixed;
-    z-index: 9999;
-  }
-
-  #left, #right {
-  	top: 0;
-    bottom: 0;
-  	width: 15px;
-  }
-  #left {
-    left: 0;
-  }
-
-  #right {
-    right: 0;
-  }
-
-  #top, #bottom {
-  	left: 0;
-    right: 0;
-  	height: 15px;
-  }
-
-  #top {
-    top: 0;
-  }
-
-  #bottom {
-    bottom: 0;
-  }
-
-  #logo {
-    margin: auto;
-  }
 
 
 /* Mobile Scaling */
@@ -133,54 +124,22 @@ a:hover {
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .logo-overlay h1 {
+      font-size: 35pt;
+    }
+
+    .logo-overlay h3 {
+      font-size: 14pt;
+    }
+
     .logo {
-      margin-top: 50%;
-      margin-left: 5%;
-      max-width: 75%;
-    }
-
-    .byline {
-      visibility: hidden;
-    }
-
-    .mobile-byline {
-      margin-top: -5%;
-      padding-bottom: 10%;
-      margin-left: 5%;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 20pt;
-      visibility: visible;
-    }
-
-    .mobile-link {
-      visibility: visible;
-      font-size: 18pt;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      text-align: center;
-      background-color: #FFFA03;
-      color: #1E1E1E;
-      bottom: 0 !important;
-      min-width: 100%;
-      position: absolute;
-      z-index: 9999;
-    }
-
-    .link {
-      display: none;
+      width: 75%
     }
 
     #footer {
-      left: 5%;
-      bottom: 35px;
-      height:30px;
-      width:100%;
-      text-align: left;
+      padding-top: 10px;
+      font-size: 12pt;
     }
-
-
-    #top, #bottom, #left, #right { display: none; }
 
   }
 
@@ -190,41 +149,25 @@ a:hover {
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    .logo {
-      margin-top: 10%;
-      margin-left: 5%;
-      max-width: 35%;
+
+    .logo-overlay h1 {
+      font-size: 45pt;
     }
-    .byline {
-      margin-top: 5%;
-      margin-left: 5%;
-      text-transform: uppercase;
-      font-weight: 700;
+
+    .logo-overlay h3 {
       font-size: 20pt;
     }
 
-    .link {
-      margin-top: -5%;
-      margin-left: 5%;
-      font-size: 12pt;
-      color: #fff !important;
+    #social-icons {
+      position: fixed;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
     #footer {
-      right: 3%;
-      font-size: 10px;
-      background-color: transparent;
-      padding-top: 5% !important;
-      width:100%;
-      text-align: right;
-    }
-
-    #top, #bottom {
-      height: 10px;
-    }
-
-    #left, #right {
-      width: 10px;
+      padding-top: 25px;
+      font-size: 11pt;
     }
 
   }
