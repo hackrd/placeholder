@@ -5,7 +5,7 @@
 
 body {
   color: #FFF;
-  background: linear-gradient(to bottom right, #057AFF, #42449D); /* Standard syntax */
+  background: linear-gradient(to bottom right, #057AFF, #42449D);
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
