@@ -1,6 +1,6 @@
 /* This code is the property of the River Dell Regional School District and its related entities. It may not be copied or re-used without express permission from the Development Team */
 /* Poppins font from Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
 
 body {
   color: #FFF;
@@ -106,6 +106,101 @@ a:hover {
   font-size: 13pt;
 }
 
+.btn-one {
+  color: rgb(255,255,255) !important;
+  background-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  border-color: #fff;
+  font-weight: 300 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+
+}
+
+.btn-one:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+
+}
+
+.btn-two {
+  color: #42449D !important;
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border-width: 2px !important;
+  border-color: #42449D !important;
+  font-weight: 300 !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 20px !important;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+
+}
+
+.btn-two:hover {
+  color: #42449D !important;
+  background-color: rgba(66, 68, 157, 0.5) !important;
+	-webkit-transition: all ease 0.2s;
+	-moz-transition: all ease 0.2s;
+	transition: all ease 0.2s;
+
+}
+
+#mail-btn {
+  margin-top: 50px;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+
+}
+
+.modal-header {
+  border-width: 0px;
+  border-color: transparent;
+  z-index: 999;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  min-width: 50%;
+  max-height: 100%;
+  margin-top: 25;
+  padding: 0;
+
+}
+
+.modal-content {
+  height: auto;
+  min-width: 90%;
+  border-radius: 1;
+  background-color: #fff;
+  color: #000;
+}
+
+.modal-body {
+  margin-top: -80px;
+  margin-left: -30px;
+}
 
 /* Mobile Scaling */
 
