@@ -70,6 +70,13 @@ a:hover {
   transform: translate(-50%, -50%);
   width: 55%;
   text-align: center;
+  opacity: 0.0;
+}
+
+.logo-new {
+  width: 300px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 #social-icons {
@@ -189,7 +196,7 @@ a:hover {
 
   /* Portrait */
   @media only screen
-  and (min-device-width: 375px)
+  and (min-device-width: 320px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
@@ -206,8 +213,13 @@ a:hover {
     }
 
     .logo {
-      width: 75%
+      width: 75%;
+      opacity: 0;
     }
+    
+    .logo-new {
+          width: 40%;
+     }
 
     #footer {
       padding-top: 10px;
