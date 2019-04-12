@@ -22,13 +22,36 @@ body {
 }
 
 a {
-  cursor: pointer;
-  color: inherit;
+    
 }
 
-a:hover {
+a#year {
+  cursor: pointer;
   color: inherit;
-  opacity: 50%;
+  padding: 2px 8px 2px 8px;
+    
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+
+a#year:hover {
+  color: inherit;
+  text-decoration: none;
+  background-color: rgb(255,255,255, 0.2);
+  border-radius: 7px;
+
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+}
+
+h6 {
+    margin-bottom: 10px
 }
 
 .logo-overlay h1 {
